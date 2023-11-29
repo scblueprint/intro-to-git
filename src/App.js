@@ -6,7 +6,11 @@ function App() {
   return (
     <>
       <Header />
-      <p>Contenido de la página</p>
+      <main>
+        <div className="container">
+          <p>Test</p>
+        </div>
+      </main>
       <Footer />
     </>
   );
