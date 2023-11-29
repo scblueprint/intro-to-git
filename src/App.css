@@ -1,14 +1,20 @@
+header #right-side img,
+header #left-side img { width: 50px; height: 50px; }
+
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
 }
 
-header #right-side { display: flex; gap: 7px;}
+header #right-side, header #left-side {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 header #right-side p { font-size: 20px; font-weight: bold; }
-header #right-side img { width: 50px }
 
-header #left-side { display: flex; gap: 15px; }
 header #left-side .icon { cursor: pointer; }
 
 main {
@@ -21,6 +27,33 @@ main .container {
   max-width: 1080px;
   margin: 0 auto;
 }
+#new-post {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 25px;
+  row-gap: 15px;
+}
+#new-post #top, #new-post #bottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#new-post #top input {
+  background: #EEEFF3;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+}
+#new-post hr {
+  width: 95%;
+  height: 3px;
+  background: #EEEFF3;
+  border: none;
+  margin: 25px auto;
+}
+#new-post #bottom { justify-content: center; }
 
 footer {
   background-color: #0e1111;
